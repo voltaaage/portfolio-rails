@@ -1,0 +1,127 @@
+body {
+  margin: 0;
+}
+
+.home {
+  font-family: 'Raleway', sans-serif;
+
+  a {
+    color: $white;
+    text-decoration: none;
+
+    &:hover { color: inherit; }
+  }
+
+  h1, h2 {
+    margin-bottom: 0;
+    margin-top: 0;
+    white-space: nowrap;
+  }
+
+  ul {
+    list-style-type: none;
+    margin-bottom: 0;
+    margin-top: 0.5em;
+    padding: 0;
+  }
+
+  .background {
+    background-image: url(<%= asset_path 'lake.jpg' %>);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-width: 100vw;
+    min-height: 100vh;
+    z-index: 0;
+    position: relative;
+  }
+
+  .footer {
+    background-color: $grey;
+    bottom: 0;
+    box-sizing: border-box;
+    color: $white;
+    filter: none;
+    opacity: 0.8;
+    padding: 1em;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+  }
+
+  .footer__lowerRow {
+    display: flex;
+    justify-content: space-between;
+
+    @media only screen and (max-width: 768px) { display: block; }
+  }
+
+  .name {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .avatar {
+    border-radius: 50%;
+    height: 40px;
+    margin-right: 1em;
+    min-height: 40px;
+    min-width: 40px;
+    overflow: hidden;
+    position: relative;
+    width: 40px;
+
+    img {
+      height: auto;
+      position: absolute;
+      top: -13%;
+      width: 100%;
+    }
+  }
+
+  .socialMedia {
+
+    li {
+      display: inline;
+      margin-left: 0.5em;
+      margin-right: 1em;
+      padding: 0;
+      white-space: nowrap;
+
+      @media only screen and (max-width: 768px) { display: block; }
+    }
+  }
+
+  .modal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 60%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+  }
+
+  .model-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 2em;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #888;
+    width: 80%;
+  }
+
+  .close {
+
+    &:hover {
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
