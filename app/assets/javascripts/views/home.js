@@ -1,7 +1,9 @@
-function aboutInfo () {
-  var main = document.getElementById('main');
-  var heading = '<h2>About Me</h2>';
-  var aboutContent = '<p>I\'m a cool guy</p>';
+function toggleAboutModal () {
+  var about = document.getElementById('aboutContents');
+  about.style.display = about.style.display === 'none' ? 'block' : 'none';
+}
 
-  main.innerHTML = `<div class="modal"><div class="modal-content">${heading}${aboutContent}</div><div>`;
-
+function toggleResumeModal () {
+  var resume = document.getElementById('resumeContents');
+  resume.style.display = resume.style.display === 'none' ? 'block' : 'none';
+}

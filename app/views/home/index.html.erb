@@ -1,7 +1,23 @@
 <div class='home'>
   <div class='background' style="">
 
-    <div id="main"></div>
+    <div id="main">
+      <div class="modal">
+        <div class="modal-content" id="modal-content">
+
+          <div class="contents" id='aboutContents'>
+            <h2>About Me</h2>
+            Cool things about me
+          </div>
+
+          <div class="contents" id='resumeContents'>
+            <h2>Resume</h2>
+            <p>Cool shit here</p>
+          </div>
+
+        </div>
+      </div>
+    </div>
 
     <div class='footer'>
 
@@ -17,8 +33,8 @@
       <div class='footer__lowerRow'>
         <h2>Software Engineer</h2>
         <ul class='socialMedia'>
-          <li><button id='about' onClick="aboutInfo()">About</button></li>
-          <li><button id='resume'>Resume</button></li>
+          <li><button id='about' onClick="toggleAboutModal()">About</button></li>
+          <li><button id='resume' onClick="toggleResumeModal()">Resume</button></li>
           <li><a href='https://github.com/voltaaage'>
             <i class='fa fa-github' aria-hidden="true"></i>
             <span> GitHub</span>
@@ -41,4 +57,3 @@
     </div>
   </div>
 </div>
-
