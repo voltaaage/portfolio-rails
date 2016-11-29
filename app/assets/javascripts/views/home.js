@@ -1,14 +1,3 @@
-function toggleAboutModal () {
-  var about = document.getElementById('aboutContents');
-  about.style.display = about.style.display === 'none' ? 'block' : 'none';
-}
-
-function toggleResumeModal () {
-  var resume = document.getElementById('resumeContents');
-  resume.style.display = resume.style.display === 'none' ? 'block' : 'none';
-}
-
-
 (function($){
 
 	/* ---------------------------------------------- /*
@@ -50,12 +39,6 @@ function toggleResumeModal () {
 		$('.header').sticky({
 			topSpacing: 0
 		});
-
-		$('body').scrollspy({
-			target: '.navbar-custom',
-			offset: 70
-		})
-
 
         /* ---------------------------------------------- /*
 		 * Skills
